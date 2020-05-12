@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /elasticsearch
+
+spring:
+  thymeleaf:
+    #缓冲的配置
+    cache: false
+    check-template: true
+    check-template-location: true
+    #开启MVC thymeleaf 视图解析
+    enabled: true
+    encoding: utf-8
+    mode: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+
+  #配置数据源
+  datasource:
+    url: jdbc:mysql://localhost:3306/elasticsearch?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimeZone=GMT%2B8  
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+
+#指定mybatis映射文件的地址
+mybatis:
+  configuration:
+    #驼峰命名法
+    map-underscore-to-camel-case: true
+    #配置文件的路径
+    config-location: classpath:mybatis/mybatis-config.xml
+    mapper-locations: classpath:mapper/*/*.xml
+    # mybatis自动扫描包中的实体类，自动定义别名，别名是类名(首字母大写或小写都可以,一般用小写)
+    #type-aliases-package: com.lss.elasticsearch
+
+#pagehelper分页插件配置
+#  pagehelper:
+#    helper-dialect: mysql
+#    reasonable: true
+#    support-methods-arguments: true
+#    params: countSql

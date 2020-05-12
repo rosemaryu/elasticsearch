@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 在此配置下全局启用或禁用在任何映射器中配置的所有缓存 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 设置驱动程序等待数据库响应的秒数 -->
+        <setting name="defaultStatementTimeout" value="3000"/>
+        <!-- Enables automatic mapping from classic database column names A_COLUMN to camel case classic Java property names aColumn -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 启用从经典数据库列名称A_COLUMN到驼峰式经典Java属性名称aColumn的自动映射 -->
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+    <!-- Continue going here -->
+</configuration>

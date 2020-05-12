@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>用户登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+</head>
+
+<body>
+<div id="bg">
+    <canvas></canvas>
+    <canvas></canvas>
+    <canvas></canvas>
+</div>
+
+<h1>用户登陆</h1>
+
+<div class="sub-main-w3">
+    <form action="#" method="post">
+        <div class="form-style-agile">
+            <label>
+                <i class="fa fa-user"></i>
+                用户名
+            </label>
+            <input placeholder="Username" name="Name" type="text" value="admin" required="">
+        </div>
+        <div class="form-style-agile">
+            <label>
+                <i class="fa fa-unlock-alt"></i>
+                密码
+            </label>
+            <input placeholder="Password" name="Password" type="password" required="">
+        </div>
+
+        <div class="wthree-text">
+            <ul>
+                <li>
+                    <label class="anim">
+                        <input type="checkbox" class="checkbox" required="">
+                        <span>保持登陆</span>
+                    </label>
+                </li>
+                <li>
+                    <a href="#">忘记密码?</a>
+                </li>
+            </ul>
+        </div>
+
+        <input type="submit" value="登陆">
+    </form>
+</div>
+
+<div class="footer">
+    <p>Copyright &copy; 2020.Company name All rights reserved.</p>
+</div>
+
+</body>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../static/js/canva_moving_effect.js"></script>
+
+<script>
+    addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+</script>
+</html>

@@ -42,7 +42,7 @@ public class GoodsController {
     private TransportClient client;
 
     /**
-     * 查询书籍信息123312132131
+     * 查询书籍信息
      * @param id
      * @return
      */
